@@ -5,7 +5,7 @@
     <classes>
       <class name="Poi_concept.windowHandle">
         <methods>
-          <include name="switchTozparentwindow"/>
+          <include name="closeAllWindows"/>
         </methods>
       </class> <!-- Poi_concept.windowHandle -->
     </classes>

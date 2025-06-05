@@ -17,9 +17,6 @@ import com.github.dockerjava.api.model.Driver;
 public class windowHandle
 {
 	static WebDriver driver;
- 
-	
-	
 	
 	@Test
 	public void setUpBrowser()
@@ -66,6 +63,17 @@ public class windowHandle
 	{
 		driver.switchTo().window(parentwindow);
     }
-	
+	 @AfterMethod
+	public static void closeAllWindows(List<String> hList,String parentwindow)
+	{
+		for(String e:hList)
+		{
+			if(!e.equals(parentwindow))
+			{
+				driver.switchTo().window(e).close();
+				
+			}
+		}
+	}
 
 }

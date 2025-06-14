@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Poi_concept.windowHandle">
+      <class name="Poi_concept.getAllLinks">
         <methods>
-          <include name="closeAllWindows"/>
+          <include name="setUpBrowser"/>
         </methods>
-      </class> <!-- Poi_concept.windowHandle -->
+      </class> <!-- Poi_concept.getAllLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
